@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "blog"
+    "dataSource": "blog",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "blog",
@@ -40,6 +41,10 @@
     "public": false
   },
   "Author": {
+    "dataSource": "blog",
+    "public": true
+  },
+  "Reader": {
     "dataSource": "blog",
     "public": true
   },

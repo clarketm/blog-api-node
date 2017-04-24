@@ -14,26 +14,26 @@
     ]
   },
   "User": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": false
   },
   "AccessToken": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": false
   },
   "Image": {
@@ -41,15 +41,15 @@
     "public": false
   },
   "Author": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": true
   },
   "Reader": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": true
   },
   "Post": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": true
   },
   "Locale": {
@@ -57,11 +57,15 @@
     "public": false
   },
   "Comment": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
     "public": true
   },
   "Blog": {
-    "dataSource": "blog",
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Analytics": {
+    "dataSource": "redis",
     "public": true
   }
 }

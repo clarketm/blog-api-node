@@ -7,11 +7,18 @@
     "name": "transient",
     "connector": "transient"
   },
-  "blog": {
+  "mongodb": {
     "host": "127.0.0.1",
     "port": 27017,
     "database": "blog",
-    "name": "blog",
+    "name": "mongodb",
     "connector": "mongodb"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "name": "redis",
+    "db": 0,
+    "connector": "kv-redis"
   }
 }

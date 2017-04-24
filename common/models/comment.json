@@ -1,0 +1,36 @@
+{
+  "name": "Comment",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "kind": {
+      "type": "string",
+      "default": "blog#comment"
+    },
+    "published": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
+    },
+    "content": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "post": {
+      "type": "belongsTo",
+      "model": "Post"
+    },
+    "author": {
+      "type": "belongsTo",
+      "model": "Author"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

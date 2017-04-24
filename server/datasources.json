@@ -2,5 +2,16 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "transient": {
+    "name": "transient",
+    "connector": "transient"
+  },
+  "blog": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "blog",
+    "name": "blog",
+    "connector": "mongodb"
   }
 }

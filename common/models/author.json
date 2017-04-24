@@ -1,0 +1,38 @@
+{
+  "name": "Author",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "displayName": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "post": {
+      "type": "hasMany",
+      "model": "Post"
+    },
+    "comment": {
+      "type": "hasMany",
+      "model": "Comment"
+    },
+    "blog": {
+      "type": "hasMany",
+      "model": "Blog"
+    },
+    "image": {
+      "type": "embedsOne",
+      "model": "Image",
+      "property": "profileImage"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

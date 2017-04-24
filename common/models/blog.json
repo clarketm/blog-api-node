@@ -1,0 +1,46 @@
+{
+  "name": "Blog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "kind": {
+      "type": "string",
+      "default": "blog#blog"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "published": {
+      "type": "date"
+    },
+    "updated": {
+      "type": "date"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "locale": {
+      "type": "embedsOne",
+      "model": "Locale"
+    },
+    "post": {
+      "type": "hasMany",
+      "model": "Post"
+    },
+    "author": {
+      "type": "belongsTo",
+      "model": "Author"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

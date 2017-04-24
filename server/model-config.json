@@ -14,25 +14,49 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "blog"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false
+  },
+  "Image": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "Author": {
+    "dataSource": "blog",
+    "public": true
+  },
+  "Post": {
+    "dataSource": "blog",
+    "public": true
+  },
+  "Locale": {
+    "dataSource": "transient",
+    "public": false
+  },
+  "Comment": {
+    "dataSource": "blog",
+    "public": true
+  },
+  "Blog": {
+    "dataSource": "blog",
+    "public": true
   }
 }

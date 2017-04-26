@@ -68,6 +68,80 @@ Web server listening at: http://0.0.0.0:3000
 Browse your REST API at http://0.0.0.0:3000/explorer
 ```
 
+## Persisted Models
+### Blog
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+|  kind       | string |   false  |blog#blog|
+|  name       | string |   false  |         |   
+|  description| string |   false  |         | 
+|  published  | date   |   false  |         | 
+|  updated    | date   |   false  |         | 
+|  url        | string |   false  |         | 
+
+##### Embeded Models
+* Locale
+
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+|  language   | string |   false  |         |
+|  country    | string |   false  |         |   
+
+### Post
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+|  kind       | string |   false  |blog#post|
+|  title      | string |   false  |         |   
+|  content    | object |   false  |         |   
+|  published  | date   |   false  |         | 
+|  updated    | date   |   false  |         | 
+|  url        | string |   false  |         | 
+
+### Comment
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+|  kind       | string |   false  |blog#comment|
+|  content    | object |   false  |         |   
+|  published  | date   |   false  |         | 
+|  updated    | date   |   false  |         | 
+
+### Author
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+| displayName | string |   false  |         |
+|  url        | string |   false  |         | 
+
+##### Embeded Models
+* Image as profileImage
+
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+|  url        | string |   false  |         | 
+
+### Reader
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+| displayName | string |   false  |         |
+|  url        | string |   false  |         | 
+
+##### Embeded Models
+* Image as profileImage
+
+|  Property   |  Type  | Required | Default |
+|-------------|--------|----------|---------|
+|  url        | string |   false  |         | 
+
+
+
+### Analytics
+
+
+## Operations
+WIP
+
+## Usage
+WIP
+
 ## :star: Credits
 Special thanks the the following: 
 * [Loopback](https://loopback.io/) - StrongLoop

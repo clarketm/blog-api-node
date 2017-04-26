@@ -79,7 +79,7 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 |  updated    | date   |   false  |         | 
 |  url        | string |   false  |         | 
 
-##### Embeded Models
+##### Embeded Transient Models
 * Locale
 
 |  Property   |  Type  | Required | Default |
@@ -124,7 +124,7 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 | displayName | string |   false  |         |
 |  url        | string |   false  |         | 
 
-##### Embeded Models
+##### Embeded Transient Models
 * Image as profileImage
 
 |  Property   |  Type  | Required | Default |
@@ -132,9 +132,8 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 |  url        | string |   false  |         | 
 
 
-
-### Analytics
-
+## KeyValue Models
+* Analytics
 
 ## Operations
 WIP

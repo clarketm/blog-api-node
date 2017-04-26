@@ -80,7 +80,7 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 |  url        | string |   false  |         | 
 
 ##### Embeded Transient Models
-* Locale
+* **Locale**
 
 |  Property   |  Type  | Required | Default |
 |-------------|--------|----------|---------|
@@ -112,7 +112,7 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 |  url        | string |   false  |         | 
 
 ##### Embeded Models
-* Image as profileImage
+* **Image** as profileImage
 
 |  Property   |  Type  | Required | Default |
 |-------------|--------|----------|---------|
@@ -125,7 +125,7 @@ Browse your REST API at http://0.0.0.0:3000/explorer
 |  url        | string |   false  |         | 
 
 ##### Embeded Transient Models
-* Image as profileImage
+* **Image** as profileImage
 
 |  Property   |  Type  | Required | Default |
 |-------------|--------|----------|---------|
